@@ -31,7 +31,7 @@ f = 1
 for i in range(1, k+1):
     f *= i
     p0 += (p_night**i)/f
-p0 = (p0 + 1 + ((p_night**(k+1)/k*f) * (1-(p_night/k)**m)/(1-p_night/k)))**(-1)
+p0 = (p0 + 1 + (((p_night**(k+1))/(k*f)) * (1-(p_night/k)**m)/(1-p_night/k)))**(-1)
 # Вероятность отказа
 pe = (p_night**(k+m)/((k**m)*f))*p0
 
